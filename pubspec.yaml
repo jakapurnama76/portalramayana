@@ -1,0 +1,30 @@
+name: flutter_vpn_app
+description: Aplikasi Flutter untuk koneksi VPN
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_vpn: ^0.13.0
+  flutter_secure_storage: ^9.0.0
+  webview_flutter: ^4.2.2
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.2.5
+  android_intent_plus: ^4.0.1
+  font_awesome_flutter: ^10.7.0
+
+# ✅ PERBAIKAN INDENTASI DI SINI!
+flutter: # Ini harus sejajar dengan 'dependencies:'
+  uses-material-design: true # Ini harus 2 spasi di dalam 'flutter:'
+
+  assets: # Ini juga harus 2 spasi di dalam 'flutter:'
+    - assets/ # Jika sudah ada ini dan arrow_back.png ada di root assets
+    - assets/images/ # Ini untuk folder assets/images
+    - assets/images/left-arrow.png # ✅ Pastikan nama file ini sama persis dengan yang di kode Image.asset!
+
+  # Jika Anda memiliki aset lain, letakkan di sini dengan indentasi yang sama
+  # Contoh:
+  #   - assets/logo_rals.png
+  #   - assets/sound/beep.mp3
